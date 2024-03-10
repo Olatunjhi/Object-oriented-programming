@@ -1,7 +1,13 @@
 #include "motherclass.h"
 
-motherclass::motherclass()
+motherclass::motherclass(int motherAge, string motherName)
 {
-	age = 45;
-	name = "Mary";
+	this->age = motherAge;
+	this->name = motherName;
+}
+
+void motherclass::display()
+{
+	cout << "The age of mother is : " << age << endl;
+	cout << "The name of mother is : " << name << endl; 
 }

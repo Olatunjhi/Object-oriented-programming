@@ -7,7 +7,8 @@ using namespace std;
 class motherclass
 {
 	public:
-		motherclass();
+		motherclass(int motherAge, string motherName);
+		void display();
 
 	protected:
 		int age;

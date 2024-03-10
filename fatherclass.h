@@ -7,7 +7,8 @@ using namespace std;
 class fatherclass
 {
 	public:
-		fatherclass();
+		fatherclass(int fatherAge, string fatherName);
+		void display();
 
 	protected:
 		int age;

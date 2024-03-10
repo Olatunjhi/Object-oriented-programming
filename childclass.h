@@ -8,7 +8,8 @@ using namespace std;
 class childclass:public motherclass,public fatherclass
 {
 	public:
-		childclass();
+		childclass(int motherAge, string motherName, int fatherAge, string fatherName);
+		void display();
 
 	protected:
 

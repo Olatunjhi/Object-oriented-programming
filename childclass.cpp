@@ -1,7 +1,13 @@
 #include "childclass.h"
 
-childclass::childclass()
+childclass::childclass(int motherAge, string motherName, int fatherAge, string fatherName)
+	:motherclass(motherAge, motherName), fatherclass(fatherAge, fatherName)
 {
-	cout << " The age of my mother is : " << motherclass::age << endl;
-	cout << "The age of my farther is : " <<fatherclass::age << endl;
+
+}
+
+void childclass::display()
+{
+	motherclass::display();
+	fatherclass::display();
 }
